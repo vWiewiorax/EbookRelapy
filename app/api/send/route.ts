@@ -50,7 +50,7 @@ export async function POST(req: NextRequest) {
         <!-- 🔽 DOWNLOAD BUTTON -->
         <div style="text-align:center; margin:32px 0;">
          <a
-          href="https://firebasestorage.googleapis.com/v0/b/vapeme-61377.firebasestorage.app/o/products%2Fbook.pdf?alt=media&token=9675b001-a3d9-4db3-b809-072a598f7af5"
+          href="https://firebasestorage.googleapis.com/v0/b/vapeme-61377.firebasestorage.app/o/products%2FEbook%20Relacje.pdf?alt=media&token=784f0283-6f04-4aaa-a50b-3d21bb0db43f"
           download="ebook.pdf"
           style="
             display:inline-block;
