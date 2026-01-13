@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 import { Analytics } from "@vercel/analytics/next"
+import CookieWindow from "./components/cookies/window"
+import { getUserCookie } from "./lib/cookies"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -62,7 +64,7 @@ twitter: {
   title: "Jak naprawić i rozwijać związek – E-book",
   description:
     "Praktyczny przewodnik do budowania zdrowej i trwałej relacji.",
-  images: ["https://twojastrona.pl/ebook-cover.png"],
+  images: ["https://relapy.pl/ebook-cover.png"],
 },
 }
 
@@ -79,8 +81,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Analytics />
+        {getUserCookie()?<Analytics />:""}
         {children}
+        <CookieWindow />
       </body>
     </html>
   )

@@ -26,7 +26,7 @@ const Footer = () => {
 
   <div className="flex flex-wrap justify-center items-center gap-6 opacity-80">
     {/* Local */}
-    <Image src="/payments/blik.svg" alt="BLIK" width={48} height={24} />
+    <Image src="/payments/blik.png" alt="BLIK" width={48} height={24} />
     <Image src="/payments/link.png" className="bg-white p-2" alt="Link" width={60} height={38} />
 
     {/* Cards */}
@@ -54,6 +54,12 @@ const Footer = () => {
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 Regulamin
+              </Link>
+              <Link
+                href="/contact"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Kontakt
               </Link>
             </nav>
           </div>

@@ -24,6 +24,7 @@ const Navbar = () => {
   const navLinks = [
     { href: "/", label: "Strona główna" },
     { href: "/about", label: "O nas" },
+    { href: "/contact", label: "Kontakt" },
   ];
 
   return (
