@@ -55,6 +55,9 @@ export default function ContactPage() {
       }
   
       setSuccess("Wiadomość została wysłana ✔️")
+      setTimeout(() => {
+        setSuccess("");
+      }, 4000);
       setFormData({ email: "", subject: "", description: "" })
     } catch {
       setError("Nie udało się połączyć z serwerem.")

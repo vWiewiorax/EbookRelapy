@@ -14,10 +14,10 @@ export async function POST(req: NextRequest) {
     const ALLOWED_ORIGINS = [
         "https://relapy.pl",
         "https://www.relapy.pl",
+        "http://localhost:3000"
       ];
       
       const origin = req.headers.get("origin");
-      
       if (!origin || !ALLOWED_ORIGINS.includes(origin)) {
         return NextResponse.json(
           { error: "Forbidden origin" },
@@ -92,9 +92,8 @@ export async function POST(req: NextRequest) {
       });
 
       await transporter.sendMail({
-        from,
         to: "kontakt@relapy.pl",
-        subject,
+        subject:`${subject} from: ${from}`,
         html: message,
       });
     }
