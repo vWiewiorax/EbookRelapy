@@ -56,6 +56,12 @@ const Footer = () => {
                 Regulamin
               </Link>
               <Link
+                href="/cookies"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Cookies
+              </Link>
+              <Link
                 href="/contact"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
