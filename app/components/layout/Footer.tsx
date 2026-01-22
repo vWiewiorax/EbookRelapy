@@ -62,6 +62,12 @@ const Footer = () => {
                 Cookies
               </Link>
               <Link
+                href="/opinion_police"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Polityka opini
+              </Link>
+              <Link
                 href="/contact"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >

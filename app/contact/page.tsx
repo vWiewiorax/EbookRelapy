@@ -19,6 +19,7 @@ export default function ContactPage() {
     description: "",
   })
   const [loading, setLoading] = useState(false)
+  const [accepted, setAccepted] = useState(false)
   const [success, setSuccess] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
   
@@ -213,6 +214,10 @@ export default function ContactPage() {
                   className="bg-black/50 border-white/20 text-white placeholder:text-white/40 resize-none"
                 />
               </div>
+              <div className="flex items-start">
+                <input type="checkbox" className="mt-1 mr-2" onChange={(e)=>setAccepted(e.target.checked)} />
+                <h5>Wyrażam zgode na przetwarzanie moich danych osobowych przez Grupa Max 15 sp.z.o.o. w celu obsługi zapytania wysłanego przez formularz kontaktowy zgodnie z <a href="/policy" className="text-blue-500" >polityką prywatności</a></h5>
+              </div>
               {success && (
                 <div className="text-sm text-green-400 bg-green-400/10 border border-green-400/20 rounded-lg p-3">
                     {success}
@@ -226,7 +231,7 @@ export default function ContactPage() {
                 )}
              <Button
             type="submit"
-            disabled={loading}
+            disabled={loading||!accepted}
             className="w-full bg-white text-black hover:bg-white/90 h-11 text-base disabled:opacity-50"
             >
             {loading ? "Wysyłanie..." : "Wyślij wiadomość"}
