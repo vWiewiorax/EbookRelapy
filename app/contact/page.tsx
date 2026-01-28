@@ -144,8 +144,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-sm text-white/60 mb-1">Telefon</p>
-                    <a href="tel:+48123456789" className="text-lg hover:text-white/80 transition-colors">
-                      +48 123 456 789
+                    <a href="tel:+48790640722" className="text-lg hover:text-white/80 transition-colors">
+                      +48 790 640 722
                     </a>
                   </div>
                 </div>
