@@ -102,7 +102,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
 
       {/* Article Content */}
       <article
-        className="prose prose-invert max-w-none [&_p]:text-white/80 [&_p]:leading-relaxed [&_h2]:font-serif [&_h2]:text-white [&_h3]:font-serif [&_h3]:text-white [&_img]:rounded-xl [&_img]:my-6 [&_a]:text-white [&_a]:underline [&_ul]:text-white/70 [&_ol]:text-white/70 [&_li]:text-white/70 [&_blockquote]:border-l-white/30 [&_blockquote]:text-white/60 [&_strong]:text-white [&_em]:text-white/90"
+        className="prose flex justify-center prose-invert max-w-none [&_p]:text-white/80 [&_p]:leading-relaxed [&_h2]:font-serif [&_h2]:text-white [&_h3]:font-serif [&_h3]:text-white [&_img]:rounded-xl [&_img]:my-6 [&_a]:text-white [&_a]:underline [&_ul]:text-white/70 [&_ol]:text-white/70 [&_li]:text-white/70 [&_blockquote]:border-l-white/30 [&_blockquote]:text-white/60 [&_strong]:text-white [&_em]:text-white/90"
         dangerouslySetInnerHTML={{ __html: blogPosts.htmlContent }}
       />
 
