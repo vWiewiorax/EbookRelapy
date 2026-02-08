@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowLeft, Calendar, Tag } from "lucide-react"
+import { ArrowLeft, Calendar, Loader, Tag } from "lucide-react"
 import { use, useState, useEffect } from "react"
 import { Button } from "@/app/components/ui/button"
 import { BlogDocument, formatDate, useBlogs } from "@/app/lib/useBlogs"
@@ -32,7 +32,16 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
       setBlogPosts(foundBlog[0])
     }
   },[products,slug])
-  if (!blogPosts||!isLoaded) {
+  if(!isLoaded){
+    return (
+      <div className="min-h-screen bg-black text-white flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="font-serif flex flex-col  gap-3 text-4xl mb-4">Ładowanie... <Loader className="animate-spin w-4 h-4" /></h1>
+        </div>
+      </div>
+    )
+  }
+  if (!blogPosts) {
     return (
       <div className="min-h-screen bg-black text-white flex items-center justify-center">
         <div className="text-center">

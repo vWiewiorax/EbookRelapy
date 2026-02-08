@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
+import Carousel from "./Carousel";
 
 const Hero = () => {
   return (
@@ -83,27 +84,7 @@ const Hero = () => {
           </motion.div>
 
           {/* Book Image */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative order-1 lg:order-2"
-          >
-            <div className="relative max-w-md mx-auto">
-              {/* Book */}
-              {/* Decorative Arrow */}
-              <div className="relative w-full max-w-[350px] aspect-[3/4] hover-lift">
-                <Image 
-                  src="/ebook-cover.png"
-                  alt="E-book: Jak dbać o relacje w związku"
-                  fill
-                  className="object-cover rounded-lg border border-gray-700 shadow-2xl shadow-black/50"
-                />
-              </div>
-              {/* Decorative Arrow */}
-              
-            </div>
-          </motion.div>
+          <Carousel />
         </div>
       </div>
     </section>
