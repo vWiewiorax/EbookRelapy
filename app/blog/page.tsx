@@ -17,7 +17,7 @@ export default function BlogPage() {
     const unsubscribe = listenToProducts()
     return unsubscribe
   }, [listenToProducts])
-
+  console.log(blogPosts[0])
   return (
     <div className="min-h-screen bg-[#fafafa] text-zinc-900">
       <Navbar />
