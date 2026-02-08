@@ -27,24 +27,27 @@ const Privacy = () => {
                 Ostatnia aktualizacja: {new Date().toLocaleDateString('pl-PL')}
               </p>
 
-              <section className="space-y-4">
-                <h2 className="font-serif text-2xl text-foreground">1. Informacje ogólne</h2>
+                            <section className="bg-white border border-zinc-200 rounded-2xl p-8 shadow-sm space-y-4">
+
+                                <h2 className="font-serif text-2xl text-zinc-900"> 1.<span className="text-red-600"> Informacje ogólne</span></h2>
                 <p>
                   Niniejsza polityka prywatności określa zasady przetwarzania i ochrony danych osobowych 
                   przekazanych przez Użytkowników w związku z korzystaniem z serwisu i zakupem produktów cyfrowych.
                 </p>
               </section>
 
-              <section className="space-y-4">
-                <h2 className="font-serif text-2xl text-foreground">2. Administrator danych</h2>
+                            <section className="bg-white border border-zinc-200 rounded-2xl p-8 shadow-sm space-y-4">
+
+                                <h2 className="font-serif text-2xl text-zinc-900"> 2.<span className="text-red-600"> Administrator danych</span></h2>
                 <p>
                   Administratorem danych osobowych jest właściciel serwisu. Kontakt z administratorem 
                   możliwy jest pod adresem e-mail podanym w stopce strony.
                 </p>
               </section>
 
-              <section className="space-y-4">
-                <h2 className="font-serif text-2xl text-foreground">3. Zakres zbieranych danych</h2>
+                            <section className="bg-white border border-zinc-200 rounded-2xl p-8 shadow-sm space-y-4">
+
+                                <h2 className="font-serif text-2xl text-zinc-900"> 3.<span className="text-red-600"> Zakres zbieranych danych</span></h2>
                 <p>Zbieramy następujące dane osobowe:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Adres e-mail – w celu realizacji zamówienia i dostarczenia produktu</li>
@@ -53,8 +56,9 @@ const Privacy = () => {
                 </ul>
               </section>
 
-              <section className="space-y-4">
-                <h2 className="font-serif text-2xl text-foreground">4. Cel przetwarzania danych</h2>
+                            <section className="bg-white border border-zinc-200 rounded-2xl p-8 shadow-sm space-y-4">
+
+                                <h2 className="font-serif text-2xl text-zinc-900"> 4.<span className="text-red-600"> Cel przetwarzania danych</span></h2>
                 <p>Dane osobowe przetwarzane są w celu:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Realizacji zamówień i dostarczenia zakupionych produktów</li>
@@ -64,8 +68,9 @@ const Privacy = () => {
                 </ul>
               </section>
 
-              <section className="space-y-4">
-                <h2 className="font-serif text-2xl text-foreground">5. Prawa użytkownika</h2>
+                            <section className="bg-white border border-zinc-200 rounded-2xl p-8 shadow-sm space-y-4">
+
+                                <h2 className="font-serif text-2xl text-zinc-900"> 5.<span className="text-red-600"> Prawa użytkownika</span></h2>
                 <p>Każdy użytkownik ma prawo do:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Dostępu do swoich danych osobowych</li>
@@ -76,8 +81,9 @@ const Privacy = () => {
                 </ul>
               </section>
 
-              <section className="space-y-4">
-                <h2 className="font-serif text-2xl text-foreground">6. Bezpieczeństwo danych</h2>
+                            <section className="bg-white border border-zinc-200 rounded-2xl p-8 shadow-sm space-y-4">
+
+                                <h2 className="font-serif text-2xl text-zinc-900"> 6.<span className="text-red-600"> Bezpieczeństwo danych</span></h2>
                 <p>
                   Stosujemy odpowiednie środki techniczne i organizacyjne w celu ochrony danych osobowych 
                   przed nieuprawnionym dostępem, utratą lub zniszczeniem. Wszystkie transakcje płatnicze 
