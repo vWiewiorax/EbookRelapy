@@ -3,10 +3,12 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
 import Link from "next/link";
-import Image from "next/image";
 import Carousel from "./Carousel";
-
-const Hero = () => {
+interface prosp{
+  isFullscreen:boolean;
+  setIsFullscreen:(e:boolean)=>void
+}
+const Hero = ({isFullscreen,setIsFullscreen}:prosp) => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <div className="container mx-auto px-6 relative z-10">
@@ -84,7 +86,7 @@ const Hero = () => {
           </motion.div>
 
           {/* Book Image */}
-          <Carousel />
+          <Carousel isFullscreen={isFullscreen} setIsFullscreen={setIsFullscreen}  />
         </div>
       </div>
     </section>
