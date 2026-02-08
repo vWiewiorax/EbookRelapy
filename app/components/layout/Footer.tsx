@@ -19,22 +19,22 @@ const Footer = () => {
                 © {currentYear} Wszelkie prawa zastrzeżone.
               </p>
             </div>
-            <div className="flex flex-col items-center gap-4 border-t border-border/20 pt-8">
-  <p className="text-sm text-muted-foreground">
-    Bezpieczne metody płatności
-  </p>
+            <div className="flex flex-col items-center gap-4  pt-8">
+              <p className="text-sm text-muted-foreground">
+                Bezpieczne metody płatności
+              </p>
 
-  <div className="flex flex-wrap justify-center items-center gap-6 opacity-80">
-    {/* Local */}
-    <Image src="/payments/blik.png" alt="BLIK" width={48} height={24} />
-    <Image src="/payments/link.png" className="bg-white p-2" alt="Link" width={60} height={38} />
+              <div className="flex flex-wrap justify-center items-center gap-6 opacity-80">
+                {/* Local */}
+                <Image src="/payments/blik.png" alt="BLIK" width={48} height={24} />
+                <Image src="/payments/link.png" className="bg-white p-2" alt="Link" width={60} height={38} />
 
-    {/* Cards */}
-    <Image src="/payments/visa.png" alt="Visa" width={48} height={24} />
-    <Image src="/payments/mastercard.png" alt="Mastercard" width={48} height={24} />
-    <Image src="/payments/maestro.png" alt="Maestro" width={48} height={24} />
-  </div>
-</div>
+                {/* Cards */}
+                <Image src="/payments/visa.png" alt="Visa" width={48} height={24} />
+                <Image src="/payments/mastercard.png" alt="Mastercard" width={48} height={24} />
+                <Image src="/payments/maestro.png" alt="Maestro" width={48} height={24} />
+              </div>
+            </div>
             {/* Links */}
             <nav className="flex flex-wrap justify-center gap-8">
               <Link
@@ -65,7 +65,7 @@ const Footer = () => {
                 href="/opinion_police"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
-                Polityka opini
+                Polityka opinii
               </Link>
               <Link
                 href="/contact"
@@ -75,11 +75,6 @@ const Footer = () => {
               </Link>
             </nav>
           </div>
-
-          {/* Payment methods banner */}
-          {/* Payment methods banner */}
-
-
         </div>
       </div>
     </footer>
