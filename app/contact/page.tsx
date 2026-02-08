@@ -64,7 +64,7 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#fafafa] text-zinc-900">
+    <div className="min-h-screen  text-zinc-900">
       <Navbar />
 
       {/* Hero */}
@@ -83,7 +83,7 @@ export default function ContactPage() {
           </h1>
           <p className="text-lg text-zinc-600 leading-relaxed">
             Masz pytania dotyczące naszego e-booka lub budowania relacji?
-            Napisz do nas — chętnie odpowiemy.
+            Napisz do nas - chętnie odpowiemy.
           </p>
         </motion.div>
 
@@ -124,10 +124,10 @@ export default function ContactPage() {
                   <div>
                     <p className="text-sm text-zinc-500">Telefon</p>
                     <a
-                      href="tel:+48123456789"
+                      href="tel:+48790640722"
                       className="text-lg hover:text-red-600 transition-colors"
                     >
-                      +48 123 456 789
+                      +48 790 640 722
                     </a>
                   </div>
                 </div>

@@ -185,7 +185,7 @@ const Checkout = () => {
                   ) : (
                     <>
                       <Lock className="w-4 h-4" />
-                      Zapłać 39,99 zł
+                      Zapłać 59,99 zł
                     </>
                   )}
                 </Button>
@@ -226,7 +226,7 @@ const Checkout = () => {
                 {/* Total */}
                 <div className="flex justify-between items-center pt-8">
                   <span>Razem</span>
-                  <span className="font-serif text-3xl">39,99 zł</span>
+                  <span className="font-serif text-3xl">59,99 zł</span>
                 </div>
               </div>
             </motion.div>

@@ -110,7 +110,10 @@ export default function RootLayout({
           />
         </noscript>
         {getUserCookie()?<Analytics />:""}
-        {children}
+        <div className="gradient-bg relative min-h-screen overflow-hidden">
+          {/* Optional: if you want Navbar/Footer on all pages */}
+          {children}
+        </div>
         <CookieWindow />
       </body>
     </html>

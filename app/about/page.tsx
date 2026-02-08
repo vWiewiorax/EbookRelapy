@@ -15,7 +15,7 @@ const stats = [
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen ">
       <Navbar />
       <main className="pt-32 pb-20">
         <div className="container mx-auto px-6">
@@ -42,7 +42,7 @@ const About = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <div className="aspect-square max-w-md  mx-auto  rounded-lg flex items-center justify-center border border-border/30">
+              <div className="aspect-square max-w-md  mx-auto  rounded-lg flex items-center justify-center ">
                 <img src="/logo_relapy.png"></img>
               </div>
             </motion.div>

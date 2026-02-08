@@ -141,7 +141,15 @@
 .animate-draw {
   animation: draw 2s ease-out forwards;
 }
-
+.gradient-bg {
+  background: linear-gradient(
+    to bottom, 
+    #ffe6e9 0%,       /* start with first color */
+    #ffe6e9 50%,      /* first color holds for first 50% */
+    hsl(var(--background)) 50%, /* second color starts at 50% */
+    hsl(var(--background)) 100% /* ends fully with second color */
+  );
+}
 @keyframes fadeUp {
   from {
     opacity: 0;

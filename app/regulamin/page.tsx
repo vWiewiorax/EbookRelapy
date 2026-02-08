@@ -6,7 +6,7 @@ import Footer from "@/app/components/layout/Footer"
 
 const Terms = () => {
   return (
-    <div className="min-h-screen bg-[#fafafa] text-zinc-900">
+    <div className="min-h-screen  text-zinc-900">
       <Navbar />
 
       <main className="pt-32 pb-20">

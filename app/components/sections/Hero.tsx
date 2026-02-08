@@ -10,7 +10,7 @@ interface prosp{
 }
 const Hero = ({isFullscreen,setIsFullscreen}:prosp) => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden pt-28 bg-background">
+    <section className="relative min-h-screen flex items-center overflow-hidden pt-28 ">
   <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_right,rgba(220,38,38,0.08),transparent_60%)]" />
   <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">

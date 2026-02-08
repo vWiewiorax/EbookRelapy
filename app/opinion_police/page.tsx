@@ -8,7 +8,7 @@ import Navbar from "../components/layout/Navbar"
 
 export default function OpinionPolicyPage() {
   return (
-    <div className="min-h-screen bg-[#fafafa] text-zinc-900">
+    <div className="min-h-screen  text-zinc-900">
       {/* Navigation */}
      <Navbar />
 

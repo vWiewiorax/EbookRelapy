@@ -16,7 +16,7 @@ const features = [
 
 const Pricing = () => {
   return (
-    <section className="py-32 relative bg-background">
+    <section className="py-32 relative ">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -72,7 +72,7 @@ const Pricing = () => {
 
                   <div className="flex items-baseline justify-center gap-1">
                     <span className="font-serif text-6xl text-foreground">
-                      39,99
+                      59,99
                     </span>
                     <span className="text-xl text-foreground">zł</span>
                   </div>
