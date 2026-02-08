@@ -10,8 +10,9 @@ interface prosp{
 }
 const Hero = ({isFullscreen,setIsFullscreen}:prosp) => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      <div className="container mx-auto px-6 relative z-10">
+    <section className="relative min-h-screen flex items-center overflow-hidden pt-28 bg-background">
+  <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_right,rgba(220,38,38,0.08),transparent_60%)]" />
+  <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Text Content */}
           <motion.div
@@ -25,7 +26,7 @@ const Hero = ({isFullscreen,setIsFullscreen}:prosp) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-sm tracking-[0.2em] uppercase text-muted-foreground mb-6"
+              className="text-sm tracking-[0.2em] uppercase text-primary mb-6"
             >
               E-book o relacjach
             </motion.p>
@@ -33,22 +34,22 @@ const Hero = ({isFullscreen,setIsFullscreen}:prosp) => {
             {/* Headline */}
             <h1 className="font-serif text-4xl md:text-5xl relative  lg:text-6xl leading-tight mb-8">
               Jak dbać o relacje{" "}
-              <span className="italic">i budować</span>{" "}
-              <img src="/strzalka.png" className="absolute top-[-10rem] filter-white  w-96 left-[30rem]" />
+              <span className="italic text-primary">i budować</span>{" "}
+              {/* <img src="/strzalka.png"   className="absolute top-[-8rem] w-80 left-[28rem] opacity-90"/> */}
               <span className="relative inline-block">
                 wartościowe związki?
                 <motion.span
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
                   transition={{ duration: 0.8, delay: 0.8 }}
-                  className="absolute -bottom-2 left-0 w-full h-0.5 bg-foreground/30 origin-left"
-                />
+                  className="absolute -bottom-2 left-0 w-full h-0.5 bg-primary origin-left"
+                  />
               </span>
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg text-muted-foreground mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-              Praktyczny przewodnik, który pomoże Ci zbudować głębokie, trwałe relacje oparte na zaufaniu i zrozumieniu.
+            <p className="text-lg text-foreground/70 mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+            Praktyczny przewodnik, który pomoże Ci zbudować głębokie, trwałe relacje oparte na zaufaniu i zrozumieniu.
             </p>
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -68,7 +69,7 @@ const Hero = ({isFullscreen,setIsFullscreen}:prosp) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 1 }}
-              className="flex flex-wrap justify-center lg:justify-start gap-8 mt-12 pt-8 border-t border-border/20"
+              className="flex flex-wrap justify-center lg:justify-start gap-8 mt-12 pt-8 border-t border-border/40"
             >
               <div>
                 <p className="font-serif text-3xl">278</p>

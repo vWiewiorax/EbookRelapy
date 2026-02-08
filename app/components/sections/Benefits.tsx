@@ -47,7 +47,7 @@ const Benefits = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-20"
         >
-          <p className="text-sm tracking-[0.2em] uppercase text-muted-foreground mb-4">
+          <p className="text-sm tracking-[0.2em] uppercase text-primary mb-4">
             Co znajdziesz w środku
           </p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl leading-tight">
@@ -68,7 +68,7 @@ const Benefits = () => {
               className="group"
             >
               <div className="mb-4">
-                <span className="text-sm text-muted-foreground font-mono">
+                <span className="text-sm text-primary/60 font-mono">
                   {benefit.number}
                 </span>
               </div>

@@ -7,7 +7,7 @@ import Footer from "../components/layout/Footer"
 
 export default function OpinionPolicyPage() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen  text-white">
       {/* Navigation */}
       <motion.nav
         initial={{ y: -100 }}

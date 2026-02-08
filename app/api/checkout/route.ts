@@ -25,7 +25,7 @@ export async function POST(req: Request) {
             name: "Jak dbać o relacje w związku (E-book)",
           },
  
-           unit_amount: 3999, // 99 zł
+           unit_amount: 5999, // 99 zł
         },
         quantity: 1,
       },

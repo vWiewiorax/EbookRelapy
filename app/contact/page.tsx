@@ -11,6 +11,7 @@ import { Textarea } from "../components/ui/textarea"
 
 import { motion } from "framer-motion"
 import Footer from "../components/layout/Footer"
+import Navbar from "../components/layout/Navbar"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -69,34 +70,9 @@ export default function ContactPage() {
   
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen  text-white">
       {/* Navigation */}
-      <motion.nav
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        className="border-b border-white/10"
-      >
-        <div className="container mx-auto px-6 py-6">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="text-2xl font-serif font-bold tracking-tight">
-              RELAPY
-            </Link>
-            <div className="flex items-center gap-8">
-              <Link href="/" className="text-sm hover:text-white/80 transition-colors">
-                Strona główna
-              </Link>
-              <Link href="/about" className="text-sm hover:text-white/80 transition-colors">
-                O nas
-              </Link>
-              <Link href="/contact" className="text-sm hover:text-white/80 transition-colors">
-                Kontakt
-              </Link>
-              <Button className="bg-white text-black hover:bg-white/90 rounded-full px-6">Kup e-booka</Button>
-            </div>
-          </div>
-        </div>
-      </motion.nav>
+     <Navbar />
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-24">

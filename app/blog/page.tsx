@@ -18,10 +18,8 @@ export default function BlogPage() {
     return unsubscribe
   }, [listenToProducts])
   return (
-    <div className="min-h-screen bg-black text-white">
-      {/* Navigation */}
+    <div className="min-h-screen  text-white">
       <Navbar />
-
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-24">
         <motion.div
