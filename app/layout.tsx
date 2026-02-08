@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 import { Analytics } from "@vercel/analytics/next"
 import CookieWindow from "./components/cookies/window"
-import { getUserCookie } from "./lib/cookies"
 import Script from "next/script"
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -109,12 +108,12 @@ export default function RootLayout({
             alt=""
           />
         </noscript>
-        {getUserCookie()?<Analytics />:""}
         <div className="gradient-bg relative min-h-screen overflow-hidden">
           {/* Optional: if you want Navbar/Footer on all pages */}
           {children}
         </div>
         <CookieWindow />
+        <Analytics />
       </body>
     </html>
   )
