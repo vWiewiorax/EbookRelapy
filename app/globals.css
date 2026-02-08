@@ -144,8 +144,7 @@
 .gradient-bg {
   background: linear-gradient(
     to bottom, 
-    #ffe6e9 0%,       /* start with first color */
-    #ffe6e9,      /* first color holds for first 50% */
+    rgb(243, 206, 211) 0%,       /* start with first color */
     hsl(var(--background)), /* second color starts at 50% */
     hsl(var(--background)) 100% /* ends fully with second color */
   );
