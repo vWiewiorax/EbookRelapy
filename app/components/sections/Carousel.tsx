@@ -77,6 +77,7 @@ return (
               <Image 
                 src={`/carousel_photos/${i + 1}.png`}
                 alt={`Slide ${i + 1}`}
+                priority
                 fill
                 className="object-cover"
               />

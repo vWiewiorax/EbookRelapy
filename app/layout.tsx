@@ -2,8 +2,12 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 import { Analytics } from "@vercel/analytics/next"
-import CookieWindow from "./components/cookies/window"
-import { getUserCookie } from "./lib/cookies"
+import dynamic from "next/dynamic";
+
+const CookieWindow = dynamic(
+  () => import("./components/cookies/window"),
+  { ssr: false }
+);
 import Script from "next/script"
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +34,9 @@ keywords: [
   "e-book o relacjach",
   "miłość",
 ],
-
+verification: {
+  google: "zYxQ9CrDARbwWtLmhlJkk2M-9zFIvevWkCqnPgV0zuI",
+},
 authors: [{ name: "Twoja Marka" }],
 robots: "index, follow",
 alternates: {
@@ -75,17 +81,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pl" className="">
+    <html lang="pl" >
       <head>
       <meta name="google-site-verification" content="zYxQ9CrDARbwWtLmhlJkk2M-9zFIvevWkCqnPgV0zuI" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-         <Script
-          id="facebook-pixel"
-          strategy="afterInteractive"
-        >
+        <Script id="facebook-pixel" strategy="lazyOnload">
+
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -110,9 +114,8 @@ export default function RootLayout({
             alt=""
           />
         </noscript>
-        {getUserCookie()?<Analytics />:""}
-        <div className="gradient-bg relative min-h-screen overflow-hidden">
-          {/* Optional: if you want Navbar/Footer on all pages */}
+        <Analytics />
+          <div className="gradient-bg relative min-h-screen overflow-hidden">
           {children}
         </div>
         <CookieWindow />
