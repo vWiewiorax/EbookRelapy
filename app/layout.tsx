@@ -93,6 +93,7 @@ export default function RootLayout({
   href="https://connect.facebook.net"
   crossOrigin=""
 />
+<link rel="dns-prefetch" href="https://connect.facebook.net" />
 
       <meta name="msvalidate.01" content="AFBF2F4E184A2D36B32969B7874DAB5B" />
       <meta name="google-site-verification" content="zYxQ9CrDARbwWtLmhlJkk2M-9zFIvevWkCqnPgV0zuI" />

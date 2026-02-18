@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
 import Link from "next/link";
-import Carousel from "./Carousel";
+import dynamic from "next/dynamic";
+const Carousel = dynamic(() => import("./Carousel"), {
+  ssr: false,
+})
 interface prosp{
   isFullscreen:boolean;
   setIsFullscreen:(e:boolean)=>void
