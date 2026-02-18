@@ -32,7 +32,6 @@ keywords: [
   "e-book o relacjach",
   "miłość",
 ],
-themeColor: "#ffffff",
 authors: [{ name: "Twoja Marka" }],
 robots: {
   index: true,
@@ -88,36 +87,21 @@ export default function RootLayout({
   return (
     <html lang="pl" >
       <head>
-      <link
-  rel="preconnect"
-  href="https://connect.facebook.net"
-  crossOrigin=""
-/>
-<link rel="dns-prefetch" href="https://connect.facebook.net" />
-
       <meta name="msvalidate.01" content="AFBF2F4E184A2D36B32969B7874DAB5B" />
       <meta name="google-site-verification" content="zYxQ9CrDARbwWtLmhlJkk2M-9zFIvevWkCqnPgV0zuI" />
-      <Script
-  id="ld-json"
-  type="application/ld+json"
-  strategy="afterInteractive"
->
-  {JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "Book",
-    name: "Jak naprawić i rozwijać związek",
-    author: {
-      "@type": "Organization",
-      name: "Relapy",
-    },
-    inLanguage: "pl",
-    description:
-      "Praktyczny przewodnik pomagający odbudować relację i poprawić komunikację w związku.",
-    publisher: {
-      "@type": "Organization",
-      name: "Relapy",
-    },
-  })}
+      <Script id="facebook-pixel" strategy="lazyOnload">
+  {`
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];   // 👇 now loads from your domain
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    '/scripts/fbevents.js');
+    fbq('init', '1977166209847517');
+    fbq('track', 'PageView');
+  `}
 </Script>
       </head>
       <body
