@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
     removeConsole: true,
   },
   images: {
+    formats: ['image/webp', 'image/avif'],
     remotePatterns: [
       {
         protocol: "https",

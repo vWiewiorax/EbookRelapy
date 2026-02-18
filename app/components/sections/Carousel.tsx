@@ -78,6 +78,7 @@ return (
                 src={`/carousel_photos/${i + 1}.webp`}
                 alt={`Slide ${i + 1}`}
                 priority
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 609px"
                 fetchPriority="high"
                 fill
                 className="object-cover"
