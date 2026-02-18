@@ -40,7 +40,7 @@ verification: {
 authors: [{ name: "Twoja Marka" }],
 robots: "index, follow",
 alternates: {
-  canonical: "https://twojastrona.pl",
+  canonical: "https://relapy.pl",
 },
 icons: {
   icon: [
@@ -53,11 +53,11 @@ openGraph: {
   title: "Jak naprawić i rozwijać związek – Praktyczny e-book",
   description:
     "Dowiedz się, jak odbudować relację, poprawić komunikację i stworzyć zdrowy związek.",
-  url: "https://twojastrona.pl",
+  url: "https://relapy.pl",
   siteName: "E-book o Relacjach",
   images: [
     {
-      url: "https://twojastrona.pl/ebook-cover.png",
+      url: "https://relapy.pl/ebook-cover.png",
       width: 1200,
       height: 630,
     },
@@ -83,6 +83,7 @@ export default function RootLayout({
   return (
     <html lang="pl" >
       <head>
+      <meta name="msvalidate.01" content="AFBF2F4E184A2D36B32969B7874DAB5B" />
       <meta name="google-site-verification" content="zYxQ9CrDARbwWtLmhlJkk2M-9zFIvevWkCqnPgV0zuI" />
       </head>
       <body
