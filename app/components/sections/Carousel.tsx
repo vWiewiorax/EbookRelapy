@@ -75,9 +75,10 @@ return (
               onClick={openFullscreen}
             >
               <Image 
-                src={`/carousel_photos/${i + 1}.png`}
+                src={`/carousel_photos/${i + 1}.webp`}
                 alt={`Slide ${i + 1}`}
                 priority
+                fetchPriority="high"
                 fill
                 className="object-cover"
               />

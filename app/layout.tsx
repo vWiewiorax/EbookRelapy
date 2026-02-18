@@ -16,9 +16,11 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Relapy",
-  description:
-  "Praktyczny e-book o naprawie i rozwoju związku. Naucz się lepszej komunikacji, odbuduj bliskość i stwórz zdrową relację.",
+  title: {
+    default: "Relapy – Jak naprawić i rozwijać związek",
+    template: "%s | Relapy",
+  },  description:
+  "Praktyczny e-book o naprawie i rozwoju związku. Naucz się lepszej komunikacji, odbuduj bliskość i stwórz trwałą, zdrową relację krok po kroku.",
 
 keywords: [
   "związek",
@@ -30,12 +32,19 @@ keywords: [
   "e-book o relacjach",
   "miłość",
 ],
-verification: {
-  google: "zYxQ9CrDARbwWtLmhlJkk2M-9zFIvevWkCqnPgV0zuI",
-},
+themeColor: "#ffffff",
 authors: [{ name: "Twoja Marka" }],
-robots: "index, follow",
-alternates: {
+robots: {
+  index: true,
+  follow: true,
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-video-preview": -1,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+  },
+},alternates: {
   canonical: "https://relapy.pl",
 },
 icons: {
@@ -50,7 +59,7 @@ openGraph: {
   description:
     "Dowiedz się, jak odbudować relację, poprawić komunikację i stworzyć zdrowy związek.",
   url: "https://relapy.pl",
-  siteName: "E-book o Relacjach",
+  siteName: "Relapy",
   images: [
     {
       url: "https://relapy.pl/ebook-cover.png",
@@ -61,7 +70,7 @@ openGraph: {
   locale: "pl_PL",
   type: "website",
 },
-
+metadataBase: new URL("https://relapy.pl"),
 twitter: {
   card: "summary_large_image",
   title: "Jak naprawić i rozwijać związek – E-book",
@@ -79,8 +88,36 @@ export default function RootLayout({
   return (
     <html lang="pl" >
       <head>
+      <link
+  rel="preconnect"
+  href="https://connect.facebook.net"
+  crossOrigin=""
+/>
+
       <meta name="msvalidate.01" content="AFBF2F4E184A2D36B32969B7874DAB5B" />
       <meta name="google-site-verification" content="zYxQ9CrDARbwWtLmhlJkk2M-9zFIvevWkCqnPgV0zuI" />
+      <Script
+  id="ld-json"
+  type="application/ld+json"
+  strategy="afterInteractive"
+>
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Book",
+    name: "Jak naprawić i rozwijać związek",
+    author: {
+      "@type": "Organization",
+      name: "Relapy",
+    },
+    inLanguage: "pl",
+    description:
+      "Praktyczny przewodnik pomagający odbudować relację i poprawić komunikację w związku.",
+    publisher: {
+      "@type": "Organization",
+      name: "Relapy",
+    },
+  })}
+</Script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

@@ -5,6 +5,7 @@ import Navbar from "@/app/components/layout/Navbar";
 import Footer from "@/app/components/layout/Footer";
 import { Button } from "@/app/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 const stats = [
   { value: "4+", label: "lat doświadczenia" },
@@ -43,7 +44,7 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <div className="aspect-square max-w-md  mx-auto  rounded-lg flex items-center justify-center ">
-                <img src="/logo_relapy.png"></img>
+                <Image src="/logo_relapy.png" alt="logo" width={550} height={450} priority></Image>
               </div>
             </motion.div>
 
