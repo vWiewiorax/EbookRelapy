@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     siteName: "Relapy",
     images: [
       {
-        url: "https://relapy.pl/ebook-cover.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/postyblogmaker.firebasestorage.app/o/blog-main-images%2Febook-cover.jpg?alt=media&token=d0e737ae-b6ee-45eb-9d44-8f70bbe6c6a8",
         width: 1200,
         height: 630,
       },
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     title: "Jak naprawić i rozwijać związek – E-book",
     description:
       "Praktyczny przewodnik do budowania zdrowej i trwałej relacji.",
-    images: ["https://relapy.pl/ebook-cover.jpg"],
+    images: ["https://firebasestorage.googleapis.com/v0/b/postyblogmaker.firebasestorage.app/o/blog-main-images%2Febook-cover.jpg?alt=media&token=d0e737ae-b6ee-45eb-9d44-8f70bbe6c6a8"],
   },
 }
 
