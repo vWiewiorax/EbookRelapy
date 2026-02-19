@@ -22,7 +22,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-32 relative border-t border-border/20">
+    <section className="py-32 relative ">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <motion.div
