@@ -61,7 +61,7 @@ openGraph: {
   siteName: "Relapy",
   images: [
     {
-      url: "https://relapy.pl/ebook-cover.webp",
+      url: "https://relapy.pl/ebook-cover.jpg",
       width: 1200,
       height: 630,
     },
@@ -75,7 +75,7 @@ twitter: {
   title: "Jak naprawić i rozwijać związek – E-book",
   description:
     "Praktyczny przewodnik do budowania zdrowej i trwałej relacji.",
-  images: ["https://relapy.pl/ebook-cover.webp"],
+  images: ["https://relapy.pl/ebook-cover.jpg"],
 },
 }
 
