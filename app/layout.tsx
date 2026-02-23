@@ -92,8 +92,6 @@ export default function RootLayout({
         <meta name="google-site-verification" content="zYxQ9CrDARbwWtLmhlJkk2M-9zFIvevWkCqnPgV0zuI" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-
-        {/* Facebook Pixel — loads from self-hosted script for better caching */}
         <Script id="facebook-pixel" strategy="lazyOnload">
           {`
             !function(f,b,e,v,n,t,s)
@@ -108,7 +106,6 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
-
         <noscript>
           <img
             height="1"
@@ -118,7 +115,6 @@ export default function RootLayout({
             alt=""
           />
         </noscript>
-
         <Analytics />
         <div className="gradient-bg relative min-h-screen overflow-hidden">
           {children}

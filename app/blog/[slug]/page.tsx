@@ -12,7 +12,6 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params
   const post = await getBlogById(slug)
-  console.log(post)
   if (!post) {
     return {
       title: "Nie znaleziono wpisu | Relapy",
