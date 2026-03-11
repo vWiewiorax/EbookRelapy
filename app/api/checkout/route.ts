@@ -16,7 +16,7 @@ export async function POST(req: Request) {
     mode: "payment",
     payment_method_types: ["card", "blik"],
     customer_email: email,
-
+    allow_promotion_codes: true,
     line_items: [
       {
         price_data: {
@@ -25,7 +25,7 @@ export async function POST(req: Request) {
             name: "Jak dbać o relacje w związku (E-book)",
           },
  
-           unit_amount: 5999, // 99 zł
+           unit_amount: 5999,
         },
         quantity: 1,
       },
