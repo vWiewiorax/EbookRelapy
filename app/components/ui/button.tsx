@@ -16,6 +16,8 @@ const buttonVariants = cva(
         ghost: "hover:bg-foreground/5 hover:text-foreground",
         link: "text-foreground underline-offset-4 hover:underline",
         hero: "bg-red-500 text-background font-medium hover:bg-red-500/90 hover:-translate-y-0.5",
+        instagram: "bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] font-medium  hover:-translate-y-0.5",
+        tiktok: "gradient font-medium  hover:-translate-y-0.5",
         heroOutline: "border-2 border-bg-red-500  bg-transparent text-foreground hover:border-foreground hover:bg-foreground/5",
       },
       size: {

@@ -34,7 +34,7 @@ export default async function SuccessPage({ searchParams }: Props) {
   // POST request to your API route
   try {
     
-    await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/send`, {
+    await fetch(`/api/send`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

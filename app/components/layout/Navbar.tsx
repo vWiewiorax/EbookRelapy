@@ -63,6 +63,28 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
+            <Link
+                  href="https://www.instagram.com/relapyblog/"
+                  target="_blank"
+                >
+                  <Button variant="instagram" size="default" className=" " asChild>
+                  <div className="flex items-center text-white">
+                    <img src="/instagram-2-1-logo-svgrepo-com.svg" className="w-6 h-6" alt="Instagram" />
+                    @relapyblog
+                  </div>
+                  </Button>
+                </Link>
+                <Link
+                  href="https://www.instagram.com/relapyblog/"
+                  target="_blank"
+                >
+                  <Button variant="tiktok" size="default" className=" " asChild>
+                  <div className="flex items-center text-white">
+                    <img src="/tiktok-svgrepo-com.svg" className="w-6 h-6" alt="Instagram" />
+                    @relapyblog
+                  </div>
+                  </Button>
+                </Link>
             <Button variant="hero" size="default" asChild>
               <Link href="/payment">Kup e-booka</Link>
             </Button>

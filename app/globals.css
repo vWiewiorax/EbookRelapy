@@ -97,3 +97,9 @@
   color: #888;
 }
  
+.gradient {
+  background: linear-gradient(135deg, #69C9D0 0%, #010101 40%, #010101 60%, #EE1D52 100%);
+}
+.rounded-duzo{
+  border-radius: 25%;
+}
